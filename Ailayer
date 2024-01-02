@@ -1,0 +1,56 @@
+New Audit Ailayer Beta Version 
+
+        ▫️ Name Token: AI LAYER 
+        ▫️ CA: 0xC1aB96aa2f623279bBE31CD0315746Bd44a4560f
+        ▫️ Symbol: ALY
+        ▫️ Telegram: https://t.me/AiLayerPortal
+        ▫️ Website: https://ailayer.net/
+        ▫️ Result Audit: 
+
+
+This is a Solidity smart contract code that needs to be audited. The contract functions as a donation-style contract, where it allows users to donate to any address they specify.
+
+At first glance, this code appears to work as intended and does not pose any immediate security risks. However, an in-depth analysis would be required to determine if there are possible risks or issues.
+
+The code begins with the usual pragma directive. It is important to make sure that the version of the compiler specified is updated, as it allows the code to take advantage of all the latest features and security enhancements.
+
+In terms of coding, there are a few potential issues. The function  donate() is declared public, but it is not marked view. Nothing is done to prevent the function from being called with invalid data. An attacker might call this function with a maliciously crafted input, potentially triggering an exploitable bug.
+
+The code also lacks adequate checks for inputs, as well as any form of authentication or authorization. This could allow malicious actors to easily donate their own money or funds from someone else's account. 
+
+The code also does not make use of any built-in safety features such as re-entrancy protection.
+        ▫️ Function Contract :
+        
+ 🔰 ANTI WHALE MODIFIABLE: true 
+ 🔰 BUY TAX: 0.03 
+ 🔰 CAN TAKE BACK OWNERSHIP: false 
+ 🔰 CANNOT BUY: false 
+ 🔰 CANNOT SELL ALL: false 
+ 🔰 CREATOR BALANCE: false 
+ 🔰 CREATOR PERCENT: false 
+ 🔰 EXTERNAL CALL: false 
+ 🔰 HIDDEN OWNER: false 
+ 🔰 HONEYPOT WITH SAME CREATOR: false 
+ 🔰 IS ANTI WHALE: true 
+ 🔰 IS BLACKLISTED: false 
+ 🔰 IS HONEYPOT: false 
+ 🔰 IS IN DEX: true 
+ 🔰 IS MINTABLE: false 
+ 🔰 IS OPEN SOURCE: true 
+ 🔰 IS PROXY: false 
+ 🔰 IS WHITELISTED: true 
+ 🔰 LP HOLDER COUNT: 4 
+ 🔰 LP TOTAL SUPPLY: 1.074665531229200155 
+ 🔰 OWNER ADDRESS: 0xdb2e2cd6e158c2ad5d7e4fc221ce7629a0517b06 
+ 🔰 OWNER BALANCE: false 
+ 🔰 OWNER CHANGE BALANCE: false 
+ 🔰 OWNER PERCENT: false 
+ 🔰 PERSONAL SLIPPAGE MODIFIABLE: false 
+ 🔰 SELFDESTRUCT: false 
+ 🔰 SELL TAX: 0.1012 
+ 🔰 SLIPPAGE MODIFIABLE: true 
+ 🔰 TOKEN NAME: AiLayer 
+ 🔰 TOKEN SYMBOL: ALY 
+ 🔰 TOTAL SUPPLY: 200000000 
+ 🔰 TRADING COOLDOWN: false 
+ 🔰 TRANSFER PAUSABLE: false
